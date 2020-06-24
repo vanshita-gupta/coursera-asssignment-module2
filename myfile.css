@@ -1,0 +1,117 @@
+@viewport
+{
+    width: device-width ;
+    zoom: 1.0 ;
+}
+body
+{
+    font-family: sans-serif;
+}
+h2
+{
+    text-align: center;
+}
+p.temp
+{
+    padding: 0px 15px;
+    margin: 5px;
+}
+#left
+{   
+    width: 31.8%;
+    border: 2px solid black;
+    background-color: lightskyblue;
+    position: relative;
+    float: left;
+}
+#center
+{
+    width: 31.8%;
+    background-color: lightskyblue;
+    position: relative;
+    float: left;
+    border: 2px solid black;
+}
+#right
+{
+    width: 31.8%;
+    background-color: lightskyblue;
+    position: relative;
+    float: right;
+    border: 2px solid black;
+}
+#one , #two , #three
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 120px;
+    text-align: center;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#one
+{
+    background-color: pink;
+}
+#two
+{
+    background-color: red;
+    color: white;
+}
+#three
+{
+    background-color: wheat;
+}
+@media (min-width:768px)
+{
+    .container
+    {
+        width: 98%;
+    }
+}
+@media (min-width:992px)
+{
+    .container
+    {
+        width: 98%;
+    }
+    #left , #center , #right
+    {
+        width: 31%;
+    }
+    #center
+    {
+        margin-left: 3%;
+    }
+}
+@media (max-width: 991px)
+{
+    #left
+    {
+        width: 48%;
+        float: left;
+        margin-bottom: 10px;
+    }
+    #center
+    {
+        width: 48%;
+        float: right;
+        margin-bottom: 10px;
+    }
+    #right
+    {
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 767px)
+{
+    #left , #center , #right
+    {
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+    }
+} 
